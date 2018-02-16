@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar:100,200,300,400,500,600,700|Nanum+Pen+Script:100,200,300,400,500,600,700');
+
+/*------------------------------ logo and photo ---------------------------*/
+header{
+    margin: 0;
+}
+
+.logo{
+    background: url("../image/MatthewEdit.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 375.76px;
+    transition: all .5 ease-in-out;
+    -moz-transition: all .5 ease-in-out;
+    -webkit-transition: all .5 ease-in-out;
+    -o-transition: all .5 ease-in-out;
+}
+
+/*------------------------------Top: Name and Title---------------------------*/
+
+.bg-color-name-title{
+    background-color: #778899;
+    
+}
+
+.heading{
+    margin-left: 50px;
+}
+
+.name{
+    font-family: "Kavivanar", sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+.title{
+    font-family: "Nanum Pen Script", sans-serif;
+    font-weight: 200;
+    font-size: 38px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #ffffff;
+}
+
+/*--------------------------------- Menu bar --------------------------------*/
+
+
+.ul-menu-color-home{
+    background-color: #e67e22;
+}
+
+.ul-menu-color-resume{
+    background-color: #9b59b6;
+}
+
+.ul-menu-color-contact{
+    background-color: #3498db;
+}
+
+.ul-menu-color-downloadCV{
+    background-color: #525252;
+}
+
+#nav{
+    margin: 0;
+}
+
+#nav li{
+    padding:0;
+}
+
+.menuItem{
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+.menuItem a{
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    height: 120px;
+}
+
+.menuItem a i{
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 30px;
+}
+
+.menuItem span{
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*------------------------------ Hover.css ----------------------------------*/
+
+.hvr-sweep-to-bottom:before{
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
+
+/*---------------- Specail Paddings/Margins/Text over all pages --------------*/
+
+h1,h2,h3,h4{
+    margin: 0;
+    
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.general-sub{
+    font-family: "Nanum Pen Script", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fafafa;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+
+
+/*------------------------------ Footer -------------------------------------*/
+
+footer{
+    background-color: #778899;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+footer .cv-pdf{
+    color: #fafafa;
+    text-align: center;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+footer .cv-pdf i:hover{
+    color: #525252;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    
+}
+
+#footer-details{
+    margin: 20px;
+}
+
+.about,.cv{
+    font-size: 10px;
+}
+
+.social-links{
+    padding-bottom: 15px;
+    
+}
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+/*----hover on social icons, true colours------*/
+.fa-facebook:hover{
+    background: #3b5998;
+}
+
+.fa-twitter:hover{
+    background: #00aced;
+}
+
+.fa-linkedin:hover{
+    background: #007bb6;
+}
+
+.fa-google-plus:hover{
+    background: #dd4b39;
+}
+
+.fa-instagram:hover{
+    background: #bc2a8d;
+}
+
+.fa-youtube:hover{
+    background: #bb0000;
+}
+/*-------end of hover social icons ---------------*/
+
+/*----------------------------------index content ---------------------------*/
+
+.bg-color-three-reasons{
+    background-color: #ffffff;
+}
+
+
+.section-colum{
+    padding:0 30px 30px;
+    float: none;
+    display: table-cell;
+}
+
+.row-table{
+    display: table;
+}
+
+.section-heading{
+    font-family: "Nanum Pen Script", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
