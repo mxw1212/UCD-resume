@@ -114,55 +114,24 @@
             <div class="col-xs-12 col-sm-12 col-md-8 bg-color-three-reasons section-colum">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="section-heading uppercase">About Me</h3>
+                <h3 class="contact-heading uppercase text-center">View My GitHub Projects:</h3>
+                    </div>
+                    <div class="col-md-12">
+                <h5 class="uppercase text-center">(or change the username to search for other user profiles)</h5>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
-                                <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
-                                
+                    <div class="row bg-color-contact searchBox-gitHub">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
+                            <div class="row">
+                                <div class="col-xs-10 col-sm-10 searchBox-gitHub">
+                                    <div class="center-form">
+                                        <input type="text" id="gh-username" placeholder="GitHub Username" oninput="fetchGitHubInformation()">
+                                        <div id="gh-user-data" class="clearfix"></div>
+                                        <div id="gh-repo-data" class="clearfix"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-10 col-sm-10">
-                                <h4 class="three-reasons-heading uppercase">What do I do?</h4>
-                                <p>
-                                    I'm a skilled Full Stack Developer with a wealth of diverse technical
-                                    experience that i will bring to every project. I'm a polite, enthusiastic
-                                    person who will be an asset to your business.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
-                                <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
-                                
-                            </div>
-                            <div class="col-xs-10 col-sm-10">
-                                <h4 class="three-reasons-heading uppercase">How do I do?</h4>
-                                <p>
-                                    I follow form as well as function.</br>
-                                    I know that the aesthetics of effective design combined with application speed,
-                                    security and reliabilty combine to create a great user experience.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-2 col-md-2">
-                                <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
-                                
-                            </div>
-                            <div class="col-xs-10 col-sm-10">
-                                <h4 class="three-reasons-heading uppercase">Why hire me?</h4>
-                                <p>
-                                    I work quickly and effectively in getting things built and working across the stack.</br>
-                                    I'm an excellent communicator who thrives in bright and enthusiastic teams and I'm
-                                    also a self starter when working solo.
-                                </p>
                             </div>
                         </div>
                     </div>

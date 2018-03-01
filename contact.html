@@ -26,45 +26,53 @@
                 </div>
                 <div class="row">
                     <ul id="nav" class="list-inline clearfix">
-                        <li class="col-xs-6 col-sm-3 ul-menu-color-home menuItem">
+                        <li class="col-xs-6 col-sm-2 ul-menu-color-home menuItem">
                             <a href="index.html"class="hvr-sweep-to-bottom">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                                     <span>Home</span></a>
                         </li>
-                        <li class="col-xs-6 col-sm-3 ul-menu-color-resume menuItem">
-                            <a href="Resume.html" class="hvr-sweep-to-bottom">
+                        <li class="col-xs-6 col-sm-2 ul-menu-color-interests menuItem">
+                            <a href="interests.html" class="hvr-sweep-to-bottom">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                    <span>Interests</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2 ul-menu-color-resume menuItem">
+                            <a href="resume.html" class="hvr-sweep-to-bottom">
                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                                     <span>Resume</span></a>
                         </li>
-                        <li class="col-xs-6 col-sm-3 ul-menu-color-contact menuItem">
-                            <a href="Contact.html" class="hvr-sweep-to-bottom">
+                        <li class="col-xs-6 col-sm-2 ul-menu-color-contact menuItem">
+                            <a href="contact.html" class="hvr-sweep-to-bottom">
                                 <i class="fa fa-commenting-o" aria-hidden="true"></i>
                                     <span>Contact</span></a>
                         </li>
-                        <li class="col-xs-6 col-sm-3 ul-menu-color-downloadCV menuItem">
+                        <li class="col-xs-6 col-sm-2 ul-menu-color-github menuItem">
+                            <a href="github.html" class="hvr-sweep-to-bottom">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                    <span>GitHub</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2 ul-menu-color-downloadCV menuItem">
                             <a href="assets/cv/Matthew-S-Wheeler-CV-02.2018.pdf" target="_blank" class="hvr-sweep-to-bottom">
                                 <i class="fa fa-download" aria-hidden="true"></i>
                                     <span>Download CV</span></a>
                         </li>
                     </ul>
-                    
                 </div>
             </div>
-            
         </div>
     </header>
     <section class="container-fluid">
         <div class="row bg-color-contact">
             <div>
-            <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
-            <h5 class="uppercase text-center">Lets work together</h5>
+            <h3 class="contact-heading uppercase text-center">Need more infomation?</h3>
+            <h5 class="uppercase text-center">Any questions welcomed</h5>
             </div>
         </div>
             <div class="center-form">
                 <form>
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required ></textarea>
+                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Short Summary of Question" required ></textarea>
                     <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
                 </form>
             </div>
@@ -106,7 +114,19 @@
         </div>
         
     </footer>
-    
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
+            });
+        }
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoKF2uCO2maAoJvW6uOczbf9FzqRQYenk&callback=initMap"></script>
     
 </body>
 </html>
