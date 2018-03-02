@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_ZiyPW1ND1oMYlotiNk9XX");
+        })();
+    </script>
     <title>Full Stack Web Developer</title>
 </head>
 <body>
@@ -69,7 +76,7 @@
             </div>
         </div>
             <div class="center-form">
-                <form>
+                <form onsubmit="return sendMail(this);" method="POST">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Short Summary of Question" required ></textarea>
@@ -127,6 +134,6 @@
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoKF2uCO2maAoJvW6uOczbf9FzqRQYenk&callback=initMap"></script>
-    
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
