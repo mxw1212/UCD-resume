@@ -11,7 +11,8 @@ function userInformationHTML(user) {
                     <img src="${user.avatar_url}" width="80" height="80" alt="${user.login}" />
                 </a>
             </div>
-            <p>Followers: ${user.followers} - Following ${user.following} <br> Repos: ${user.public_repos}</p>
+            <p>Followers: ${user.followers} - Following ${user.following} 
+            <br> Repos: ${user.public_repos}</p>
         </div>`;
 }
 
@@ -19,7 +20,7 @@ function fetchGitHubInformation(event) {
 
     var username = $("#gh-username").val();
     if (!username) {
-        $("#gh-user-data").html(`<h2>Please enter a GitHub username</h2>`);
+        $("#gh-user-data").html(`<h2>Enter a GitHub username</h2>`);
         return;
     }
 
@@ -30,11 +31,14 @@ function fetchGitHubInformation(event) {
     
     
     $.when(
-        $.getJSON(`https://api.github.com/users/${username}`)
+        $.getJSON(`https://api.github.com/users/${username}`),
+        $.getJSON(`https://api.github.com/users/${username}/repos`)
     ).then(
-        function(response) {
-            var userData = response;
+        function(firstResponse, secondResponse) {
+            var userData = firstResponse[0];
+            var repoData = secondResponse[0];
             $("#gh-user-data").html(userInformationHTML(userData));
+            $("#gh-repo-data").html(repoInformationHTML(repoData));
         },
         function(errorResponse) {
             if (errorResponse.status === 404) {
